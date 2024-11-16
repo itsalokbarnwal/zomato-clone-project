@@ -295,7 +295,7 @@
     }
 
     /* Features, testimonials, restaurants */
-    .feature, .testimonial, .restaurant {
+    .feature, .testimonial, .restaurant, .cuisine {
         width: 100%;
         margin: 10px 0;
     }
