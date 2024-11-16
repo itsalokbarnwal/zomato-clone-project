@@ -79,29 +79,6 @@
             outline: none;
         }
 
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #ff4d4d;
-            color: white;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            header ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            main input {
-                width: 100%;
-            }
-        }
-
         /* New section styling */
         .new-section {
             padding: 50px 20px;
@@ -148,13 +125,6 @@
             text-align: center;
         }
         
-        /* For smaller screens, adjust layout to be more responsive */
-        @media (max-width: 768px) {
-            .feature, .testimonial, .restaurant {
-                width: 100%;
-            }
-        }
-        
         /* How It Works Section */
         .how-it-works {
             padding: 50px 20px;
@@ -182,7 +152,7 @@
         }
 
         .step img {
-            width: 400px;
+            width: 350px;
             margin-bottom: 15px;
         }
 
@@ -190,11 +160,21 @@
             font-size: 18px;
             margin-top: 10px;
         }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
 
 
-        /* .testimonial p {
+        .testimonial p {
             font-style: italic;
-        } */
+        }
 
         .testimonial h4 {
             margin-top: 10px;
@@ -275,4 +255,117 @@
         .cuisine p {
             font-size: 18px;
             margin-top: 10px;
-        }
+        } 
+
+
+
+
+        /* Media queries for responsiveness on phones */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: row;
+       justify-content: space-between;
+        padding: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    header ul li a {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    /* Main section */
+    main {
+        padding: 50px 10px;
+        height: auto;
+    }
+
+    main input {
+        width: 100%;
+    }
+
+    /* Features, testimonials, restaurants */
+    .feature, .testimonial, .restaurant {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .features, .testimonials, .restaurants, .cuisine-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Steps in How It Works Section */
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .step img {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Body font size adjustments */
+    body {
+        font-size: 14px;
+    }
+
+    /* Header */
+    header ul li a {
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Main section */
+    main p {
+        font-size: 20px;
+    }
+
+    /* Features, testimonials, restaurants */
+    .features, .testimonials, .restaurants, .cuisine-list {
+        gap: 15px;
+    }
+
+    .feature img, .restaurant img {
+        height: 150px;
+    }
+
+    /* How It Works Section */
+    .steps {
+        gap: 15px;
+    }
+
+    .step img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Popular Cuisines */
+    .cuisine img {
+        height: 120px;
+    }
+}
